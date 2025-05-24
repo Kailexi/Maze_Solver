@@ -1,0 +1,34 @@
+# Unreal Engine folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+
+# Build files
+*.VC.db
+*.VC.opendb
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+
+# Compiled binary
+*.exe
+*.dll
+*.lib
+*.app
+*.dylib
+*.so
+
+# Logs
+*.log
+
+# VS Code config
+.vscode/
+.vs/
+
+# Ignore Unreal backup files
+*.tmp
+*.bak
+*.backup
