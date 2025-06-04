@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+
 
 
 #include "MazeGenerator.h"
@@ -71,19 +71,86 @@ void AMazeGenerator::dfs(std::vector<std::vector<int>>& maze, const size_t maze_
 	}
 
 	if (exitAndEntrance)
+		addExitAndEntrance(maze, width, height);
+
+}
+
+void AMazeGenerator::simpleprims(std::vector<std::vector<int>>& maze, const size_t maze_width, const size_t maze_height, bool exitAndEntrance)
+{
+
+	size_t width = maze[0].size();
+	size_t height = maze.size();
+
+	size_t x = rand() % (width - 1);
+	if (x % 2 == 0)x++;
+
+	size_t y = rand() % (height - 1);
+	if (y % 2 == 0)y++;
+
+	maze[y][x] = 0;
+
+	cell dirs[] = { {-1,0}, {1,0}, {0,-1} ,{ 0,1 } };
+
+	std::vector<std::pair<cell, cell>> fc;
+	for (auto d : dirs)
+	{
+		int nx = x + d.first * 2;
+		int ny = y + d.second * 2;
+		if (nx > -1 && nx < width - 1 && ny > -1 && ny < height - 1)
+			fc.push_back({ {x,y}, { nx,ny } });
+	}
+
+	while (!fc.empty())
 	{
 
-		int entrance_x = rand() % width;
-		while (maze[1][entrance_x] != 0)
-			entrance_x = rand() % width;
-		maze[0][entrance_x] = 0;
+		int fcsize = fc.size();
+		int ci = 0 + rand() % fcsize * (fcsize > 1);
 
-		int exit_x = rand() % width;
-		while (maze[height - 2][exit_x] != 0)
-			exit_x = rand() % width;
-		maze[height - 1][exit_x] = 0;
+		std::pair<cell, cell> c = fc[ci];
+		fc.erase(fc.begin() + ci);
+
+		int chosenx = c.second.first;
+		int choseny = c.second.second;
+
+		if (maze[choseny][chosenx] == 0)
+			continue;
+
+		int difx = c.first.first - chosenx, midx = chosenx + difx / 2;
+		int dify = c.first.second - choseny, midy = choseny + dify / 2;
+
+		maze[midy][midx] = 0;
+		maze[choseny][chosenx] = 0;
+
+		x = chosenx;
+		y = choseny;
+
+		for (auto d : dirs)
+		{
+			int nx = x + d.first * 2;
+			int ny = y + d.second * 2;
+			if (nx > -1 && nx < width - 1 && ny > -1 && ny < height - 1 && maze[ny][nx] == 1)
+				fc.push_back({ {x,y},{nx,ny} });
+		}
 
 	}
+
+	if (exitAndEntrance)
+		addExitAndEntrance(maze, width, height);
+
+}
+
+void AMazeGenerator::addExitAndEntrance(std::vector<std::vector<int>>& maze, int width, int height)
+{
+
+	int entrance_x = rand() % width;
+	while (maze[1][entrance_x] != 0)
+		entrance_x = rand() % width;
+	maze[0][entrance_x] = 0;
+
+	int exit_x = rand() % width;
+	while (maze[height - 2][exit_x] != 0)
+		exit_x = rand() % width;
+	maze[height - 1][exit_x] = 0;
 
 }
 

@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+
 
 #pragma once
 
@@ -19,9 +19,12 @@ public:
 	// Sets default values for this actor's properties
 	AMazeGenerator();
 
-	void dfs(std::vector<std::vector<int>>& maze, const size_t maze_width, const size_t maze_height, bool exitAndEntrance=false);
+	void dfs(std::vector<std::vector<int>>& maze, const size_t maze_width, const size_t maze_height, bool exitAndEntrance = false);
+
+	void simpleprims(std::vector<std::vector<int>>& maze, const size_t maze_width, const size_t maze_height, bool exitAndEntrance = false);
 	
-	
+private:
+	void addExitAndEntrance(std::vector<std::vector<int>>& maze, int width, int height);
 
 protected:
 	// Called when the game starts or when spawned
