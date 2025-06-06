@@ -64,7 +64,7 @@ This project is designed not only as a game but as a learning tool:
 
 ## 🤖 Meet the Developers
 
-Developed by **[@Kailexi](https://github.com/Kailexi)** and **[@Roisy](https://github.com/https://github.com/mosheadd)**,**[@HotIceOff](https://github.com/HotIceOff)**, **[@tmnff0](https://github.com/tmnff0) ** — passionate about AI, game design, and bringing algorithms to life!
+Developed by **[@Kailexi](https://github.com/Kailexi)** and **[@Roisy](https://github.com/https://github.com/mosheadd)**,**[@HotIceOff](https://github.com/HotIceOff)**, [@tmnff0](https://github.com/tmnff0)  — passionate about AI, game design, and bringing algorithms to life!
 
 ---
 
