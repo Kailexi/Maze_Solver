@@ -1,29 +1,20 @@
 # 🧩 Maze_Solver
 
-Welcome to the **Maze_Solver** — a cutting-edge exploration into **procedural maze generation** and **intelligent NPC pathfinding** built with **C++** and visualized through the powerful **Unreal Engine**!
+Welcome to the **Maze_Solver** — A project for RUDN University Seminar Work Semester 4 featuring **procedural maze generation** and **intelligent NPC pathfinding** built with **C++** and visualized through **Unreal Engine**!
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 This project dives deep into game algorithms, bringing together:
 
 - **Procedural Maze Generation:** Create complex labyrinths dynamically every run.
 - **A* Pathfinding Algorithm:** Enable NPCs to find the *optimal* path through the maze.
-- **Unreal Engine Visualization:** See your maze and NPCs come to life in stunning 3D, with debug tools to track pathfinding decisions in real-time.
-
+- **Unreal Engine Visualization:** See your maze and NPCs come to life in 3D, with debug tools to track pathfinding decisions in real-time.
+- 
 ---
 
-## 🎯 Features
-
-- Dynamic maze layout generation based on configurable parameters  
-- Efficient and reliable A* search algorithm for NPC navigation  
-- Visual debugging: display paths, nodes, and decision points inside Unreal  
-- Modular C++ code, ready for extension and optimization  
-
----
-
-## 🛠 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -40,7 +31,7 @@ This project dives deep into game algorithms, bringing together:
 3. **Enjoy!**
 ---
 
-## 🤝 Collaboration & Contribution
+## Collaboration & Contribution
 
 We’re building this project together! Feel free to:
 
@@ -50,7 +41,7 @@ We’re building this project together! Feel free to:
 
 ---
 
-## 📚 Documentation & Learning
+## Documentation & Learning
 
 This project is designed not only as a game but as a learning tool:
 
@@ -62,14 +53,19 @@ This project is designed not only as a game but as a learning tool:
 
 
 
-## 🤖 Meet the Developers
+## Authors
 
-Developed by **[@Kailexi](https://github.com/Kailexi)** and **[@Roisy](https://github.com/mosheadd)**, **[@HotIceOff](https://github.com/HotIceOff)**, [@tmnff0](https://github.com/tmnff0)  — passionate about AI, game design, and bringing algorithms to life!
-
----
-
-## 🌟 Thank You for Checking It Out!
-
-Whether you’re a fellow developer, a curious student, or a future collaborator — your feedback and ideas are welcome!
+Developed by **[@Kailexi](https://github.com/Kailexi)** and **[@Roisy](https://github.com/mosheadd)**, **[@HotIceOff](https://github.com/HotIceOff)**, [@tmnff0](https://github.com/tmnff0) 
 
 ---
+
+## Related
+
+Here are some related projects:
+
+[RUDN SEMESTER 3 WORK](https://github.com/Kailexi/C_DZ_Sem3)
+
+[MKP SEMESTER 3 WORK](https://github.com/Kailexi/MKPLABS-RUDN)
+
+# GL to anyone reading this❤️
+
