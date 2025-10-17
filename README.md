@@ -6,21 +6,18 @@ Welcome to the **Maze_Solver** — A project for RUDN University Seminar Work Se
 
 ## Project Overview
 
-This project dives deep into game algorithms, bringing together:
+This project is an overbiew of stuff learned, thorough semester 4 and brings some knowledge of algorithms and Unreal Engine together.
 
-- **Procedural Maze Generation:** Create complex labyrinths dynamically every run.
-- **A* Pathfinding Algorithm:** Enable NPCs to find the *optimal* path through the maze.
-- **Unreal Engine Visualization:** See your maze and NPCs come to life in 3D, with debug tools to track pathfinding decisions in real-time.
-- 
+ 
 ---
 
 ## Getting Started
 
 ### Prerequisites
 
-- Unreal Engine 5.x (recommended latest stable release)  
-- Visual Studio 2019/2022 with C++ development tools installed  
-- Git for version control  
+ Unreal Engine 5.x (recommended latest stable release)  
+ Visual Studio 2019/2022 with C++ development tools installed  
+ Git for version control  
 
 ### Quick Setup
 
@@ -31,23 +28,9 @@ This project dives deep into game algorithms, bringing together:
 3. **Enjoy!**
 ---
 
-## Collaboration & Contribution
-
-We’re building this project together! Feel free to:
-
-- Fork the repository and create feature branches  
-- Write clear, concise commit messages  
-- Submit pull requests for code reviews and integration  
-
----
-
 ## Documentation & Learning
 
-This project is designed not only as a game but as a learning tool:
-
-- Understand the **inner workings of pathfinding algorithms**  
-- Gain experience with **Unreal Engine’s C++ workflow**  
-- Explore **real-time visualization** of AI decision-making  
+This project is designed as a learning tool for future RUDN students and as part of [@Kailexi](https://github.com/Kailexi) portfolio:
 
 ---
 
