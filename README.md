@@ -6,7 +6,7 @@ Welcome to the **Maze_Solver** — A project for RUDN University Seminar Work Se
 
 ## Project Overview
 
-This project is an overbiew of stuff learned, thorough semester 4 and brings some knowledge of algorithms and Unreal Engine together.
+This project is an overview of stuff learned, thorough semester 4 and brings some knowledge of algorithms and Unreal Engine together.
 
  
 ---
